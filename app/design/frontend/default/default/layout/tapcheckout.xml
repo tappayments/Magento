@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+<!-- Tap Failure Response Review -->
+<tapcheckout_shared_failure>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+        <block type="tapcheckout/shared_failure" name="tapcheckout_shared_failure" template="tapcheckout/shared/failure.phtml">
+        </block>
+		
+    </reference>
+	<reference name="content">
+        
+    </reference>
+</tapcheckout_shared_failure>
+
+
+<!-- Tap Cancel Response Review -->
+<tapcheckout_shared_canceled>
+    <reference name="root">
+        <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+    </reference>
+    <reference name="content">
+       <block type="tapcheckout/shared_canceled" name="tapcheckout_shared_canceled"
+		 template="tapcheckout/shared/canceled.phtml">
+        </block>
+		
+    </reference>
+	<reference name="content">
+        
+    </reference>
+</tapcheckout_shared_canceled>
+
+
+
+
+</layout>
+
+
+
+
