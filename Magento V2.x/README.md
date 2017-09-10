@@ -12,12 +12,13 @@ upload app/code/Gateway (all files and folder) at you server end
 	3. php bin/magento setup:static-content:deploy
 
 
-goto Admin->Store->Configuration->Sales->Payment Method->Tap, and fill the details here and save them
-	* Title - Tap
-	* Merchant ID - 1014
-	* Username - test
-	* API Key - 1tap7
-	* Test Mode - Yes
+# Configuration:
+	1. goto Admin->Store->Configuration->Sales->Payment Method->Tap, and fill the details here and save them
+		* Title - Tap
+		* Merchant ID - 1014
+		* Username - test
+		* API Key - 1tap7
+		* Test Mode - Yes
 
 goto Admin->System->Cache Management and Clear all Cache
 
