@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <tap>                
+                <model>Gateway\Tap\Model\Tap</model>                
+                <title>Tap</title>
+				<currency>KWD</currency>
+                <active>0</active>
+                <order_status>pending</order_status>
+                <MID>MID</MID>
+				<merchant_username>merchant_username</merchant_username>
+                <merchant_key>merchant_key</merchant_key>
+                <allowspecific>0</allowspecific>
+            </tap>
+        </payment>
+    </default>
+</config>

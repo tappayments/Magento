@@ -1,0 +1,56 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="tap" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Tap</label>
+                <comment>
+                    <![CDATA[<a href="https://www.tap.company/register/" target="_blank">Click here to sign up for Tap account</a>]]>
+                </comment>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>payment/tap/active</config_path>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <config_path>payment/tap/title</config_path>
+                </field>
+                <field id="MID" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Merchant ID</label>
+                    <comment>Provided By Tap</comment>
+                    <config_path>payment/tap/MID</config_path>
+                </field>
+				<field id="merchant_username" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Merchant Username</label>
+                    <comment>Provided By Tap</comment>
+                    <config_path>payment/tap/merchant_username</config_path>
+                </field>
+                <field id="merchant_key" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>API Key</label>
+                    <comment>Provided By Tap</comment>
+                    <config_path>payment/tap/merchant_key</config_path>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Staging Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>payment/tap/debug</config_path>
+                </field>                
+                <field id="order_status" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>New Order Status</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status\NewStatus</source_model>
+                    <config_path>payment/tap/order_status</config_path>
+                </field>   
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Applicable Countries</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                    <config_path>payment/tap/allowspecific</config_path>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <config_path>payment/tap/specificcountry</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
