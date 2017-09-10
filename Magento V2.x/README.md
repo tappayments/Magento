@@ -1,4 +1,4 @@
-# Tap-Magento v2.x
+# Magento v2.x
 
 Supported Versions
 Magento supported version 2.0.X onward
@@ -12,7 +12,7 @@ upload app/code/Gateway (all files and folder) at you server end
 	3. php bin/magento setup:static-content:deploy
 
 
-# goto Admin->Store->Configuration->Sales->Payment Method->Tap, and fill the details here and save them
+goto Admin->Store->Configuration->Sales->Payment Method->Tap, and fill the details here and save them
 	* Title - Tap
 	* Merchant ID - 1014
 	* Username - test
